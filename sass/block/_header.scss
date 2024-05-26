@@ -1,6 +1,50 @@
 .navbar{
-    &__logo{
-        display: flex;
-        flex-direction: row;
-    }
+
+    display: flex;
+        height: 70px;
+        align-items: center;
+        justify-content: space-between;
+        &__logo{
+            user-select: none;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        &__collection{
+            display: flex;
+            gap: 40px;
+
+
+
+            @media (max-width: 990px) {
+                position: fixed;
+                top: 0;
+                left: -350px;
+                width: 350px;
+                background: #f1f1f1;
+                color: #000;
+                height: 100vh;
+                flex-direction: column;
+                padding: 30px;
+                transition: .5s;
+            }
+            @media (max-width: 500px){
+                width: 70%;
+            }
+        }
+        &__btn{
+            border: none;
+            background: none;
+        }
+        &__btns{
+            width: 150px;
+            height: 45px;
+            border-radius: 50px;
+            background: none;
+            color:  #F53855;
+            border: 1px solid #F53855;
+        
+
+            @media (max-width: 990px)
+        }
 }
